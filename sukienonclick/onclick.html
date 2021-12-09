@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p onclick="some_thingee()">dai ca</p>
+    <p id="demo">start</p>
+    <script>
+      function some_thingee() {
+          alert("ngu ngu");
+      }
+
+      var demo = document.getElementById("demo");
+      demo.addEventListener("click", clicker);
+      function clicker() {
+          alert("nguuuuuuuu");
+      }
+    </script>
+</body>
+</html>

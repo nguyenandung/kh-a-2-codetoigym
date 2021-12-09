@@ -7,16 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    <p onclick="some_thingee()">dai ca</p>
-    <p id="demo">start</p>
+    <p onmouseover="conchuotvao()" onmouseout="conchuotra()" id="demo"> con mẹ mày</p>
+
     <script>
-        function some_thingee() {
-            alert('ngu ngu');
+        function conchuotvao() {
+            document.getElementById("demo").style.color="red";
         }
-        var demo = document.getElementById("demo");
-        demo.addEventListener("click" ,conmemay);
-        function conmemay(){
-            alert("hello");
+        function conchuotra() {
+            document.getElementById("demo").style.color="black";
         }
     </script>
 </body>
