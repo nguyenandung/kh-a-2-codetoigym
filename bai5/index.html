@@ -1,0 +1,43 @@
+body<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <select name="" id="demo">
+       <option value="cho">cho</option>
+       <option value="meo">meo</option>
+       <option value="su tu">su tu</option>
+       <option value="bo">bo</option>
+   </select>
+</script>
+<script>
+    var mydemo = document.getElementById('demo');
+    mydemo.addEventListener("change", conmemay);
+    function conmemay(){
+        demo = document.getElementById('demo').value;
+        alert("hello")
+    } -->
+
+<!-- </script> -->
+<input type="text" class="message">
+<p id="showInput1"></p>
+<p id="showInput2"></p>
+
+<button onclick="getmessage()">lấy giá trị 1</button>
+<button id="button">lấy giá trị 2</button>
+
+<script>
+    // cách 1: dùng onclick
+    function getmessage() {
+        var message = document.querySelector('.message');
+        var show= document.querySelector('#showInput1');
+        show.innerText = message.value;
+    }
+
+</script>
+</body>
+</html>
