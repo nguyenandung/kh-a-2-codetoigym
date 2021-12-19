@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tính độ béo</title>
+</head>
+<body>
+    <script>
+        let height = prompt("nhập vào chiều cao: ");
+        let weight = prompt("nhập vào cân nặng: ");
+       
+        let bmi = weight/(height*height);
+        height = Number(height);
+        weight = Number(weight);
+        if(bmi <16){
+            alert("gầy độ 3"+bmi);
+        } if (bmi>=16 && bmi<q17){
+            alert("gầy độ 2" +bmi);
+        } if (bmi>=17 && bmi<18.5){
+            alert("gầy độ 1"+bmi);
+        }if (bmi >=18.5 && bmi<25){
+            alert("Bình thường"+bmi);
+        }if (bmi>=25 && bmi<30){
+            alert("thừa cân "+bmi);
+        } if (bmi >=30 && bmi<35){
+            alert("béo phì cấp độ 1"+bmi);
+        } if (bmi>=35 && bmi<40){
+            alert("beo phi cap do 2"+bmi);
+        } if(bmi>40){
+            alert("vô địch thiên hạ ok !"+bmi);
+        }
+
+        
+    </script>
+</body>
+</html>
