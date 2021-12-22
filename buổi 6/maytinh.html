@@ -7,9 +7,36 @@
     <title>Máy tính</title>
 </head>
 <body>
-    <form action="">
-        <input type="text">
-        <input type="text">
-    </form>
+  
+        <input type="text" id="number1">
+        <input type="text" id="number2">
+        <br>
+        <br>
+        <button  value="add" onclick="maytinh(this.value)">Add</button>
+        <button  value="sub" onclick="maytinh(this.value)">Sub</button>
+        <button  value="con" onclick="maytinh(this.value)">Con</button>
+        <button  value="div" onclick="maytinh(this.value)">Div</button>
+    
+    <br>
+    <br>
+    <p id="result"></p>
+    <script>
+        function maytinh(value) {
+        let a = parseFloat(document.getElementById('number1').value)
+        let b = parseFloat(document.getElementById('number2').value)
+
+            if(value == "add"){
+                document.getElementById('result').innerHTML = "kết quả là: " + (a+b);
+            } else if(value == "sub"){
+                document.getElementById('result').innerHTML = "kết quả là: " + (a-b);
+            }else if(value == "con"){
+                document.getElementById('result').innerHTML = "kết quả là: " + (a*b);
+            }else if(value == "div"){
+                document.getElementById('result').innerHTML = "kết quả là: " + (a/b);
+            }
+    
+    }
+        
+    </script>
 </body>
 </html>
