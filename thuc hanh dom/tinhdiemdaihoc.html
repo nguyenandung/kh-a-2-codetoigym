@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tính điểm đại học</title>
+</head>
+<body>
+    <h2>Tính điểm đại học</h2>
+    Môn toán <input type="text" value="" type="number" id="toan"> <br> <br>
+    Môn văn <input type="text" value="" id="van" type="number"><br><br>
+    Môn anh <input type="text" value="" id="anh" type="number"><br> <br>
+
+    Khu vực 1 <select  id="khuvuc">
+        <option value="0.75">KV1</option>
+        <option value="0.5">KV2</option>
+        <option value="0.25">KV2-NT</option>
+        <option value="0">KV3</option>
+    </select>
+    <br>
+    <br>
+    <button onclick="tinhdiem()">tính diểm</button>
+    <br>
+    <br>
+    <br>
+    <p id="demo"></p>
+
+
+    <script>
+        function tinhdiem(){
+            var toan = parseFloat(document.getElementById('toan').value)
+            var van = parseFloat(document.getElementById('van').value)
+            var anh = parseFloat(document.getElementById('anh').value)
+            var khuvuc = parseFloat(document.getElementById('khuvuc').value)
+
+            var s = toan + van +anh + khuvuc;
+
+            document.getElementById('demo').innerHTML = "tính điểm đại học khối D của bạn là : " + s;
+            console.log(toan, van,anh,s,khuvuc)
+        }
+    </script>
+</body>
+</html>
