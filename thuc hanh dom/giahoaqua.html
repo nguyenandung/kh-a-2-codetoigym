@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giá hoa quả</title>
+</head>
+<body>
+    <!-- Cách 1 -->
+    <h2>Giá hoa quả</h2>
+    <input type="text" value="" id="demo">
+    <button onclick="hoaqua()">tra cứu</button>
+
+    <p id="inra"></p>
+    <br>
+    <br>    
+
+    <!-- Cách 2: -->
+
+    <h2>Giá hoa quả</h2>
+    <select  id="demoed">
+        <option value="Ổi">Ổi</option>
+        <option value="cam">Cam</option>
+        <option value="chanh"> Chanh</option>
+        <option value="quýt">Quýt</option>
+        <option value="sầu riêng">Sầu riêng</option>
+
+        
+    </select>
+    <button id="btn" onclick="Checkgia()">xem giá</button>
+    <br>
+    <br>
+    <p id="giaqua"></p>
+    <script>
+        function hoaqua() {
+            var a = document.getElementById('demo').value;
+            if (a =="Ổi"){
+                document.getElementById('inra').innerHTML = "50000 VNĐ";
+            } else if (a == "cam"){
+                document.getElementById('inra').innerHTML= "100000 VNĐ";
+            } else if (a == "chanh"){
+                document.getElementById('inra').innerHTML = "10000 VNĐ";
+            } else if (a == "quýt") {
+                document.getElementById('inra').innerHTML = "70000 VNĐ";
+            } else if (a == "sầu riêng") {
+                document.getElementById('inra').innerHTML =" 500000 VNĐ";
+            }
+        }
+
+        function Checkgia(){
+            let qua = document.getElementById('demoed').value;
+            
+            switch (qua) {
+                case "Ổi":
+                    document.getElementById('giaqua').innerHTML = "50000 VNĐ"
+                    break;
+                case "cam": 
+                    document.getElementById('giaqua').innerHTML = "100000 VNĐ"
+                break;
+                case "chanh": 
+                    document.getElementById('giaqua').innerHTML = "10000 VNĐ"
+                case "quýt": 
+                    document.getElementById('giaqua').innerHTML = "70000 VNĐ"
+            }
+        }
+    </script>
+
+</body>
+</html>
