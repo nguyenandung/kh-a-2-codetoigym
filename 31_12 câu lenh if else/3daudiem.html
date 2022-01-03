@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Điểm toán :
+    <input type="text" id="math"> <br>
+    Điểm lý: 
+    <input type="text" id="cry"> <br>
+    Điểm Hóa :
+    <input type="text" id="ery"> <br>
+    <button onclick="check()">fgf</button>
+    <p id="result"></p>
+
+
+
+    <script>
+        function check() {
+            let math = parseInt(document.getElementById('math').value);
+            let ly = parseInt(document.getElementById('cry').value);
+            let hoa = parseInt(document.getElementById('ery').value);
+            let trungbinh = (math + ly + hoa) / 3;
+            let result = document.getElementById('result');
+            alert(trungbinh); 
+
+            if(trungbinh >= 8){
+                result.innerHTML = "hsg"
+               } else if(trungbinh>=6.5 && trungbinh <8){
+                   result.innerHTML = "Khá"
+               }
+        }
+    </script>
+</body>
+</html>   
