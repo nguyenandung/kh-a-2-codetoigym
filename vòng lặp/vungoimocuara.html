@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="vungnhap">
+    <button onclick="vung_oi()" type="button">câu lệnh</button>
+    <p id="demo"></p>
+
+   <script>
+       function vung_oi() {
+           let password = "vung oi mo ra";
+           let input = document.getElementById('vungnhap').value;
+        do{
+            
+            document.getElementById('demo').innerHTML = "ko dung than chú";
+        } while (input != password);
+       
+            document.getElementById('demo').innerHTML = "thanh cong";
+    }
+   </script>
+
+
+    <!-- <script>
+       
+        let password = "vung oi mo cua ra";
+        let input;
+        do{
+            input = prompt("Nhap cau than chu");
+        }while (input !== password);
+        alert("mo cua thanh cong")
+       
+    </script> -->
+</body>
+</html>
