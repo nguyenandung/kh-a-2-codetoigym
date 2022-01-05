@@ -10,7 +10,7 @@
        <input type="text" name="" id="input" placeholder="Nhập một số bất kỳ" onchange="fabonacifunction()">
     <p  > Dãy fibonacci: </p>
 <span id="kqua" ></span>
-<script>
+<!-- <script>
         let num1 = parseInt(prompt("nhập một số bất kỳ"));
     let a =0, b = 1, temp;
      document.write("Dãy fibonacci:");
@@ -27,6 +27,18 @@
        // alert(b);
      
       }
+</script> -->
+<script>
+    let n = parseInt(prompt("nhap so bat ki"));
+    let a = 0, b=1,temp ;
+    while (n>=0){
+        temp = a;
+        a= a+b;
+        b = temp;
+
+        n--;
+        alert(b);
+    }
 </script>
 </body>
 </html>
