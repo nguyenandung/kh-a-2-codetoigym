@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // sinh ra 1 so ngau nhiên 
+        var ngaunhien = prompt("nhap so",Math.round(Math.random()));
+        var doan = prompt("bạn đoán này sinh ra số mấy?");
+       
+     
+           if(ngaunhien == doan){
+                alert('ban doan dung');
+           } else {
+               // doan sai
+               alert("lươt 2");
+               doan = prompt("ban nhap so j nè");
+               if(ngaunhien== doan){
+                   alert('ban chien thang');
+               }else{
+                   alert('luot 3');
+                   doan = prompt('ban nhap so j ne');
+                   if(ngaunhien == doan){
+                       alert('ban chien thang');
+                   }else{
+                       alert('game over')
+                   }
+               }
+           }
+        
+    </script>
+</body>
+</html>
