@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input">
+    <button type="button" onclick="sodaonguoc()">
+        số đảo nguoc
+    </button>
+
+    <p id="ketqua"></p>
+</body>
+
+    <script>
+        function reverseString(str) {
+            var newString = "";
+            for(var i = str.length -1;i>=0;i--){
+                newString += str[i];
+            }
+            return newString;
+        }
+        function sodaonguoc() {
+            var daoso = document.getElementById('input').value;
+            var newString ="";
+            for(var i=daoso.length - 1;i>=0;i--){
+                newString += daoso[i];
+            }
+            console.log(newString);
+            document.getElementById('ketqua').innerHTML = 'Kết quả: '+newString;
+        }
+    </script>
+</html>
