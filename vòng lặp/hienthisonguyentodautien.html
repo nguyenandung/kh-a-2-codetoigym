@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="input" placeholder="Bạn muốn hiển thị bao nhiêu số nguyên tố?" onchange="myfunction()">
+    <br> <span>Kết quả:</span> <span id="kqua"></span>
+
+    <script>
+        function myfunction(){
+    var input = document.getElementById('input').value;
+    var count =0;
+    var N = 2;
+
+    while(count < input){
+        if(N % 2 != 0){
+           
+            console.log(N + " ");
+         
+            document.getElementById('kqua').innerHTML += N + ", ";
+            count ++;
+        }
+        
+        N++;
+    }
+
+}
+    </script>
+</body>
+</html>
