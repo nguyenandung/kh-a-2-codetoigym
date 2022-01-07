@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    tiền gửi: <br>
+    <input type="text" id="money">
+    <br>
+    kì hạn: <br>
+    <input type="text" id="thang">
+    <br>
+    <button onclick="tinhtien()">tinh tien nhé</button>
+    <p id="result"></p>
+
+
+    <script>
+        function tinhtien() {
+            let money = parseInt(document.getElementById("money").value);
+            let month = parseInt(document.getElementById("thang").value);
+            let result =0;
+            let lai = 0.6;
+          
+            for(let i=1;i<=month;i++){
+                result =((month * 0.6)/100)
+                money += result;
+            }
+            document.getElementById("result").innerHTML = money +"đồng";
+        }        
+   </script>
+</body>
+
+</html>
