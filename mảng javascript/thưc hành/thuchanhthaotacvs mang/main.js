@@ -1,22 +1,17 @@
-let array = Array();
+let array = Array(); 
 let x = 0;
+
 function add_element_to_array(){
-    array[x]= document.getElementById("txtValue").value;
-    alert("Phần tử: "+ array[x] + "sau khi thêm vao" + x);
+    array[x] = document.getElementById('txtValue').value;
+    alert("phân tu: "+ array[x]+"add thêm vao vi tri" + x);
     x++;
-    document.getElementById("txtValue").value = "";
+    doccument.getElementById('txtValue').value="";
 }
-// function display_array() {
-//     let e = "<hr/>";
-//     for (let i = 0; i < array.length; i++) {
-//         e += "Element " + i + " = " + array[i] + "<br/>";
-//     }
-//     document.getElementById("result").innerHTML = e;
-// }
+
 function display_array(){
-    let e = "<hr>";
-    for(let i=0;i<array.length;i++){
-        e += "Phần tử 1: "+ i +"=" +array[i] + "<br>";
+    let a = "<hr>"
+    for(let i = 0;i<array.length;i++){
+        a += "phan tu: "+ i +"=" + array[i] +"<br>";
     }
-    document.getElementById('result').innerHTML = e;
+    document.getElementById('result').innerHTML =a;
 }
