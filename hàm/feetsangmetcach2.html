@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inputLeng">
+    <input type="button" id="btnMet" onclick="chuyen(this.id)" value="chuyển met sang feet">
+    <input type="button" id="btnFeet" onclick="chuyen(this.id)" value="chuyển feet sang met">
+    <div id="result"></div>
+
+
+    <script>
+        function chuyen(btnId){
+            let Leng = 0;
+            leng = parseInt(document.getElementById('inputLeng').value);
+            if(leng < 0){
+                document.getElementById('result').innerHTML = "ko dc nhập 0";
+            }else {
+                if(btnId =="btnFeet"){
+                    document.getElementById('result').innerHTML ='met là : '+(leng*0.297);
+                }else {
+                    document.getElementById('result').innerHTML ='feet là :'+(leng/0.297);
+                }
+            }
+        }
+    </script>
+</body>
+</html>
