@@ -8,19 +8,35 @@
 </head>
 <body>
     <script>
-        function taothongbao(answer){
-            let result ="";
-            if(answer){
-                result = "Thông minh. Chúng ta sẽ chơi một ván cờ hay.";
+        // function taothongbao(answer){
+        //     let result ="";
+        //     if(answer){
+        //         result = "Thông minh. Chúng ta sẽ chơi một ván cờ hay.";
+        //     }
+        //     else {
+        //         result ="Có lẽ sau đó.";
+        //     }
+        //     return result;
+        // }
+        // let confirmanser = confirm("bạn chs ko?");
+        // let theAnswer = taothongbao(confirmanser);
+        // alert(theAnswer)
+
+
+        function concho(traloi) {
+            let ketqua =  "";
+
+            if(traloi){
+                ketqua = "ok , let go";
+            }else {
+                ketqua = "biến";
             }
-            else {
-                result ="Có lẽ sau đó.";
-            }
-            return result;
+            return ketqua;
         }
-        let confirmanser = confirm("bạn chs ko?");
-        let theAnswer = taothongbao(confirmanser);
-        alert(theAnswer)
+
+        let answer = confirm("m thích chs tiếp ko");
+        let anslet = concho(answer);
+        alert(anslet);
     </script>
 </body>
 </html>
