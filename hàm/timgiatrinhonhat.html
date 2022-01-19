@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script src="con1">
+        //khoi tao vs mang có so
+      function arrMin(arr){
+          let min=arr[0];
+          for(let i=0;i<arr.length;i++){
+              if(arr[i]<min){
+                  min = arr[i];
+              }
+          }
+          return min;
+      }
+      let arr1=[1,2,3,4,5,6,6,0];
+      let minnhohon = arrMin(arr1);
+      alert(minnhohon);
+    </script> 
+
+    <!-- <script >
+        function Minarr(arry){
+            if(arry.length ==0){
+                return -1;
+            }
+            let min =arry[0];
+            for(let i =0;i<arry.length;i++){
+                if(arry[i]<min){
+                    min = arry[i];
+                }
+            }
+            return min;
+        }
+      
+        function timmin(mang, mang2){
+         
+           
+        }
+       
+    </script> -->
+</body>
+</html>
